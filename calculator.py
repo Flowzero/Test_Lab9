@@ -7,10 +7,14 @@ def subtract(x, y):
 def multiply(x, y): 
     return x * y 
 
+def power(x, y): 
+    return x ** y 
+
 print("Выберите операцию:") 
 print("1. Сложение") 
 print("2. Вычитание") 
 print("3. Умножение") 
+print("4. Степень")
  
 # Добавим какой-ниудь комментарий для теста
 '''
@@ -45,6 +49,8 @@ while True:
             print(f"{num1} - {num2} = {subtract(num1, num2)}") 
         elif choice == '3': 
             print(f"{num1} * {num2} = {multiply(num1, num2)}") 
+        elif choice == '4': 
+            print(f"{num1} в степени {num2} = {power(num1, num2)}")
          
  
         # Спрашиваем пользователя, хочет ли он продолжить 
